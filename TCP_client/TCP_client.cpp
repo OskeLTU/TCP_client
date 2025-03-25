@@ -127,8 +127,6 @@ void set_client_parameters(sockaddr_in& clientService) {
 }
 
 int main() { 
-
-    std::cout << "hello" << '\n';
     
     std::signal(SIGINT, sign_clean);
     std::signal(SIGTERM, sign_clean);
@@ -151,4 +149,6 @@ int main() {
     clean_up();
 
     return 0;
+
+
 }
